@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "vite build",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js"
   },
   "type": "module",
   "repository": {
@@ -38,9 +39,13 @@
     "@strudel.cycles/tonal": "workspace:*",
     "@strudel.cycles/transpiler": "workspace:*",
     "@strudel.cycles/webaudio": "workspace:*",
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "build-script": "^0.0.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "vite": "^4.3.3"
   }
 }
