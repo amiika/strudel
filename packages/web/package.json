@@ -34,10 +34,11 @@
   "homepage": "https://github.com/tidalcycles/strudel#readme",
   "dependencies": {
     "@strudel.cycles/core": "workspace:*",
-    "@strudel.cycles/webaudio": "workspace:*",
     "@strudel.cycles/mini": "workspace:*",
     "@strudel.cycles/tonal": "workspace:*",
-    "@strudel.cycles/transpiler": "workspace:*"
+    "@strudel.cycles/transpiler": "workspace:*",
+    "@strudel.cycles/webaudio": "workspace:*",
+    "babel-cli": "^6.26.0"
   },
   "devDependencies": {
     "vite": "^4.3.3"
