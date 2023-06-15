@@ -9,8 +9,7 @@
   },
   "scripts": {
     "build": "vite build",
-    "prepublishOnly": "npm run build",
-    "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js"
+    "prepublishOnly": "npm run build"
   },
   "type": "module",
   "repository": {
@@ -34,12 +33,14 @@
   },
   "homepage": "https://github.com/tidalcycles/strudel#readme",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.22.5",
     "@strudel.cycles/core": "workspace:*",
     "@strudel.cycles/mini": "workspace:*",
     "@strudel.cycles/tonal": "workspace:*",
     "@strudel.cycles/transpiler": "workspace:*",
     "@strudel.cycles/webaudio": "workspace:*",
-    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
     "build-script": "^0.0.1"
   },
   "devDependencies": {
