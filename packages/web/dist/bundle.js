@@ -1,5 +1,6 @@
 "use strict";
 
+require("core-js/modules/es6.array.for-each.js");
 var _typeof = require("@babel/runtime-corejs2/helpers/typeof");
 var _WeakMap = require("@babel/runtime-corejs2/core-js/weak-map");
 var _Object$defineProperty = require("@babel/runtime-corejs2/core-js/object/define-property");
@@ -19,6 +20,10 @@ exports.defaultPrebake = defaultPrebake;
 exports.evaluate = evaluate;
 exports.hush = hush;
 exports.initStrudel = initStrudel;
+require("core-js/modules/es6.string.iterator.js");
+require("core-js/modules/es6.object.to-string.js");
+require("core-js/modules/es6.array.iterator.js");
+require("core-js/modules/web.dom.iterable.js");
 var _promise = _interopRequireDefault(require("@babel/runtime-corejs2/core-js/promise"));
 var _regenerator = _interopRequireDefault(require("@babel/runtime-corejs2/regenerator"));
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/esm/objectWithoutProperties"));
