@@ -1,12 +1,13 @@
 "use strict";
 
-require("core-js/modules/es6.array.for-each.js");
-var _typeof = require("@babel/runtime-corejs2/helpers/typeof");
-var _WeakMap = require("@babel/runtime-corejs2/core-js/weak-map");
-var _Object$defineProperty = require("@babel/runtime-corejs2/core-js/object/define-property");
-var _Object$getOwnPropertyDescriptor = require("@babel/runtime-corejs2/core-js/object/get-own-property-descriptor");
-var _Object$keys = require("@babel/runtime-corejs2/core-js/object/keys");
-var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+var _context4, _context5, _context6, _context7, _context8;
+var _typeof = require("@babel/runtime-corejs3/helpers/typeof");
+var _WeakMap = require("@babel/runtime-corejs3/core-js-stable/weak-map");
+var _Object$defineProperty = require("@babel/runtime-corejs3/core-js-stable/object/define-property");
+var _Object$getOwnPropertyDescriptor = require("@babel/runtime-corejs3/core-js-stable/object/get-own-property-descriptor");
+var _forEachInstanceProperty = require("@babel/runtime-corejs3/core-js-stable/instance/for-each");
+var _Object$keys = require("@babel/runtime-corejs3/core-js-stable/object/keys");
+var _interopRequireDefault = require("@babel/runtime-corejs3/helpers/interopRequireDefault");
 _Object$defineProperty(exports, "__esModule", {
   value: true
 });
@@ -20,16 +21,19 @@ exports.defaultPrebake = defaultPrebake;
 exports.evaluate = evaluate;
 exports.hush = hush;
 exports.initStrudel = initStrudel;
-require("core-js/modules/es6.string.iterator.js");
-require("core-js/modules/es6.object.to-string.js");
-require("core-js/modules/es6.array.iterator.js");
-require("core-js/modules/web.dom.iterable.js");
-var _promise = _interopRequireDefault(require("@babel/runtime-corejs2/core-js/promise"));
-var _regenerator = _interopRequireDefault(require("@babel/runtime-corejs2/regenerator"));
-var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/esm/objectWithoutProperties"));
-var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/esm/asyncToGenerator"));
+var _promise = _interopRequireDefault(require("@babel/runtime-corejs3/core-js-stable/promise"));
+require("core-js/modules/es.error.cause.js");
+require("core-js/modules/es.error.to-string.js");
+require("core-js/modules/es.array.iterator.js");
+require("core-js/modules/es.object.to-string.js");
+require("core-js/modules/es.promise.js");
+require("core-js/modules/es.string.iterator.js");
+require("core-js/modules/web.dom-collections.iterator.js");
+var _regenerator = _interopRequireDefault(require("@babel/runtime-corejs3/regenerator"));
+var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime-corejs3/helpers/esm/objectWithoutProperties"));
+var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime-corejs3/helpers/esm/asyncToGenerator"));
 var _core = require("@strudel.cycles/core");
-_Object$keys(_core).forEach(function (key) {
+_forEachInstanceProperty(_context4 = _Object$keys(_core)).call(_context4, function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
   if (key in exports && exports[key] === _core[key]) return;
@@ -41,7 +45,7 @@ _Object$keys(_core).forEach(function (key) {
   });
 });
 var _webaudio = require("@strudel.cycles/webaudio");
-_Object$keys(_webaudio).forEach(function (key) {
+_forEachInstanceProperty(_context5 = _Object$keys(_webaudio)).call(_context5, function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
   if (key in exports && exports[key] === _webaudio[key]) return;
@@ -53,7 +57,7 @@ _Object$keys(_webaudio).forEach(function (key) {
   });
 });
 var _transpiler = require("@strudel.cycles/transpiler");
-_Object$keys(_transpiler).forEach(function (key) {
+_forEachInstanceProperty(_context6 = _Object$keys(_transpiler)).call(_context6, function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
   if (key in exports && exports[key] === _transpiler[key]) return;
@@ -65,7 +69,7 @@ _Object$keys(_transpiler).forEach(function (key) {
   });
 });
 var _mini = require("@strudel.cycles/mini");
-_Object$keys(_mini).forEach(function (key) {
+_forEachInstanceProperty(_context7 = _Object$keys(_mini)).call(_context7, function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
   if (key in exports && exports[key] === _mini[key]) return;
@@ -77,7 +81,7 @@ _Object$keys(_mini).forEach(function (key) {
   });
 });
 var _tonal = require("@strudel.cycles/tonal");
-_Object$keys(_tonal).forEach(function (key) {
+_forEachInstanceProperty(_context8 = _Object$keys(_tonal)).call(_context8, function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
   if (key in exports && exports[key] === _tonal[key]) return;
